@@ -5,3 +5,8 @@ Mangastream employs some sort of protection to its images. a single manga page c
 This script serves an educational purpose of learning phantomjs.
 
 phantomjs is like a greasemonkey script run on every loaded page. After a phantom.open(), the script will be re-evaluated. I store a flag in phantom.state indicates pages to load. This is the only trick I learn :). BTW, phantom.state will be able to store js object in the future (see phantomjs issues).
+
+how to actually use this script:
+$ phantomjs naruto.js | grep img > naruto.txt
+$ wget -i naruto.txt
+
