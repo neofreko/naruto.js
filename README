@@ -1,0 +1,7 @@
+a script to download images from mangastream.
+
+Mangastream employs some sort of protection to its images. a single manga page can be splitted into multiple images. This script, so far only able to download the image. You need to stitch those images or render and crop the page to get the actual manga page.
+
+This script serves an educational purpose of learning phantomjs.
+
+phantomjs is like a greasemonkey script run on every loaded page. After a phantom.open(), the script will be re-evaluated. I store a flag in phantom.state indicates pages to load. This is the only trick I learn :). BTW, phantom.state will be able to store js object in the future (see phantomjs issues).
