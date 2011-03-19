@@ -10,3 +10,8 @@ how to actually use this script:
 $ phantomjs naruto.js | grep img > naruto.txt
 $ wget -i naruto.txt
 
+===
+naruto2.js
+
+Use dom tricks to render manga image. too bad viewportsize is not used by phantomjs when rendering image.
+$ phantomjs naruto2.js <url>
